@@ -8,25 +8,34 @@ IDC_ABM is an agent-based modeling framework adapted from Covasim (v3.1.4) to in
 
 ```text
 IDC_ABM/
-├── README.md                         # Project overview
-├── Covasim_IDC_Modification/         # Modified Covasim framework for IDC
-│   ├── MODIFICATIONS.md              # Detailed change log
-│   ├── parameters.py                 # IDC parameters and baseline calibration
-│   ├── sim.py                        # Central IDC execution and network logging
-│   ├── people.py                     # Trait inheritance and duration correlations
-│   ├── population.py                 # Age-stratified baseline initialization
-│   └── immunity.py                   # Pathogen-specific immunity algorithms
-└── example/                          # Example simulation directory
-    ├── code/                         # Example scripts for running simulations 
-    │   ├── README.md                 # Instructions for example usage
-    │   ├── run_example.py            # Main simulation script
-    │   ├── base_func.py              # Utility and analytical functions
-    │   └── base_data.py              # Data for diverse viral profiles
-    └── result/                       # Output directories for simulation results
-        ├── README.md                 # Result overview   
-        ├── save_sim                  # Aggregated epidemiological metrics (Rt, attack rates, intervals)
-        ├── sims_detail               # Standard Covasim macro-level state summaries
-        └── tree_detail               # Agent-level network logs, individual R, and infectiousness pairs
+├── README.md                            # Project overview
+├── Covasim_IDC_Modification/            # Modified Covasim framework for IDC
+│   ├── MODIFICATIONS.md                 # Detailed change log
+│   ├── parameters.py                    # IDC parameters and baseline calibration
+│   ├── sim.py                           # Central IDC execution and network logging
+│   ├── people.py                        # Trait inheritance and duration correlations
+│   ├── population.py                    # Age-stratified baseline initialization
+│   └── immunity.py                      # Pathogen-specific immunity algorithms
+├── example/                             # Example simulation directory
+│   ├── code/                            # Example scripts for running simulations 
+│   │   ├── README.md                    # Instructions for example usage
+│   │   ├── run_example.py               # Main simulation script
+│   │   ├── base_func.py                 # Utility and analytical functions
+│   │   └── base_data.py                 # Data for diverse viral profiles
+│   └── result/                          # Output directories for simulation results
+│       ├── README.md                    # Result overview   
+│       ├── save_sim                     # Aggregated epidemiological metrics (Rt, attack rates, intervals)
+│       ├── sims_detail                  # Standard Covasim macro-level state summaries
+│       └── tree_detail                  # Agent-level network logs, individual R, and infectiousness pairs
+└── source_data/                         # Source data for paper figures (Figures 3–7)
+    ├── README.md                        # Overview of figure source datasets
+    ├── SourceData_Figure3_(Lyh).xlsx    # Baseline metrics (Household only)
+    ├── SourceData_Figure4_(Lyall).xlsx  # Baseline metrics (All settings)
+    ├── SourceData_Figure5a_(Lyh).xlsx   # Matched baselines (Household only)
+    ├── SourceData_Figure5b_(Lyall).xlsx # Matched baselines (All settings)
+    ├── SourceData_Figure6.xlsx          # Intervention effectiveness grid
+    ├── SourceData_Figure7a_(Lyh).xlsx   # Strategy effectiveness in matched AR groups (Household only)
+    └── SourceData_Figure7b_(Lyall).xlsx # Strategy effectiveness in matched AR groups (All settings)
 ```
 
 ---
